@@ -1,5 +1,21 @@
 <% provide(:title) %>
 
-<h1>Youth Sports</h1>
+<script type="text/javascript">
+	$(document).ready(function (){
+		$('.bxslider').bxSlider();
+	});
+</script>
 
-<p>View and vote on bills currently before congress</p>
+<div class="center hero-unit">
+  <h1>Welcome to Misawa Youth Sports</h1>
+  <!--<ul class="bxslider">
+  	<li><%= image_tag("http://unplugged.ee/wp-content/uploads/2013/03/19cff64033eb4868ce3e06dc67d662e8-1050x400.jpg")%></li>
+  	<li><%= image_tag("http://unplugged.ee/wp-content/uploads/2013/03/frank2.jpg")%></li> -->
+  </ul>
+  <h2 id="home"><br>
+    Register your child for sports on Misawa Air Base. <br><br> Communicate with coaches and team members.
+  </h2>
+
+  <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+</div>
+

@@ -1,0 +1,25 @@
+<% provide(:title, 'Login'); %>
+
+
+<div class="container text-center">
+        <div class="alert alertLogin alert-success text-center">Guests can login with... </br> Username: guest </br>Password: password</div>
+        <div class="hero-unit left">
+                <h2>Login</h2>
+                 <form method="post" action="https://web.engr.oregonstate.edu/~borent/parents/parentHome.php">
+            <h4>Username<span class="tiny">(guest)</span></h4><input type="text" name="username" placeholder="Enter Username">
+            <h4>Password<span class="tiny">(password)</span></h4><input type="password" name="password" placeholder="Enter Password">
+            <input class = "btn btn-large btn-primary" type="submit" name="submit" value="Login">
+           </form> 
+        </div>
+
+        <div class="hero-unit right text-center">
+                <h2>Sign up</h2>
+                        <input type="hidden">
+                        <input  type="hidden">
+                        <a href="parents/parentForm.php"><input type="submit" class="btn btn-primary btn-large" value="New Parent Account" name="login"></a>
+                        <a href="coaches/coachForm.php"><input type="submit" class="btn btn-primary btn-large" value="New Coach Account" name="login"></a>
+
+        </div>
+</div>
+
+
