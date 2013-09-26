@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Empower::Application.load_tasks
+YouthSports::Application.load_tasks

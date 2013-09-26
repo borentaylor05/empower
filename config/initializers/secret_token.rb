@@ -23,4 +23,4 @@ def secure_token
     token
   end
 end
-Empower::Application.config.secret_key_base = secure_token
+YouthSports::Application.config.secret_key_base = secure_token

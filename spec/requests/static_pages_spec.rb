@@ -2,14 +2,19 @@ require 'spec_helper'
 
 describe "Static pages" do
 	describe "Home page" do	
-		it "should have the content 'Empower' " do
+		it "should have the content 'Youth Sports' " do
 			visit '/static_pages/home'
-			expect(page).to have_content('Empower')
+			expect(page).to have_content('Youth Sports')
 		end
 
 		it "shoud have the correct title" do
 			visit '/static_pages/home'
-			expect(page).to have_title('Empower | Home')
+			expect(page).to have_title('Youth Sports')
+		end
+
+		it "should not have custom title" do
+			visit '/static_pages/home'
+			expect(page).not_to have_title(" | Home")
 		end
 	end
 
@@ -21,7 +26,7 @@ describe "Static pages" do
 
 		it "shoud have the correct title" do
 			visit '/static_pages/help'
-			expect(page).to have_title('Empower | Help')
+			expect(page).to have_title('Youth Sports | Help')
 		end
 	end
 
@@ -33,7 +38,7 @@ describe "Static pages" do
 
 		it "shoud have the correct title" do
 			visit '/static_pages/about'
-			expect(page).to have_title('Empower | About')
+			expect(page).to have_title('Youth Sports | About')
 		end
 	end
 end
