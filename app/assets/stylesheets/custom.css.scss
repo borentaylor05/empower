@@ -20,10 +20,15 @@ textarea {
 .center {
   text-align: center;
   width: 100%;
+  padding-bottom: 0px;
+}
+
+.signupBtn{
+  margin-bottom: -100px;
 }
 
 .center h1 {
-  margin-bottom: 10px;
+  margin-bottom: -50px;
 }
 
 .bg-image {
